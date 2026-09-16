@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-09-16T17:28:53.021826+00:00",
+  "scanned_at": "2026-09-16T19:30:12.817454+00:00",
   "target": "https://github.com",
   "grade": "A",
   "score": 90,
@@ -22,9 +22,9 @@
     "protocol": "TLSv1.3",
     "protocol_is_weak": false,
     "cert_subject": "github.com",
-    "cert_issuer": "Anthropic",
-    "cert_expires": "2026-10-14 16:34:16+00:00",
-    "days_until_expiry": 27,
+    "cert_issuer": "Sectigo Limited",
+    "cert_expires": "2026-11-29 23:59:59+00:00",
+    "days_until_expiry": 74,
     "expired": false,
     "error": null
   }

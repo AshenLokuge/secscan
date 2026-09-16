@@ -1,10 +1,10 @@
 {
-  "scanned_at": "2026-09-16T17:28:53.545120+00:00",
-  "target": "https://neverssl.com",
+  "scanned_at": "2026-09-16T19:32:37.454590+00:00",
+  "target": "https://example.com",
   "grade": "D",
   "score": 40,
   "headers": {
-    "url": "https://neverssl.com/",
+    "url": "https://example.com/",
     "present": {},
     "missing": {
       "Strict-Transport-Security": "Forces browsers to only use HTTPS for this site, even if a user types http:// or clicks an http link. Without it, an attacker on the same network (e.g. public wifi) can downgrade the connection to plain HTTP and intercept traffic (SSL stripping).",
@@ -16,14 +16,14 @@
     }
   },
   "tls": {
-    "hostname": "neverssl.com",
+    "hostname": "example.com",
     "connected": true,
     "protocol": "TLSv1.3",
     "protocol_is_weak": false,
-    "cert_subject": "neverssl.com",
-    "cert_issuer": "Anthropic",
-    "cert_expires": "2026-10-16 17:28:53+00:00",
-    "days_until_expiry": 29,
+    "cert_subject": "example.com",
+    "cert_issuer": "SSL Corporation",
+    "cert_expires": "2026-10-27 22:17:21+00:00",
+    "days_until_expiry": 41,
     "expired": false,
     "error": null
   }

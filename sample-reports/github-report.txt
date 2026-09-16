@@ -1,6 +1,6 @@
 
 ============================================================
-  Security Scan Report â€” https://github.com
+  Security Scan Report — https://github.com
   Grade: A  (score: 90/100)
 ============================================================
 
@@ -10,11 +10,11 @@ HTTP Security Headers  (5 present / 6 checked)
   [PASS] X-Frame-Options: deny
   [PASS] X-Content-Type-Options: nosniff
   [PASS] Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
-  [FAIL] Permissions-Policy â€” missing
+  [FAIL] Permissions-Policy — missing
          why it matters: Lets a site explicitly disable browser features it doesn't need (camera, microphone, geolocation). Without it, if the page is ever compromised by injected code, that code has access to whatever the browser allows by default.
 
 TLS / Certificate
   [PASS] Protocol: TLSv1.3
-  [PASS] Certificate valid, expires in 27 days
-         subject: github.com, issuer: Anthropic
+  [PASS] Certificate valid, expires in 74 days
+         subject: github.com, issuer: Sectigo Limited
 
