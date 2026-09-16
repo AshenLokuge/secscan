@@ -1,0 +1,30 @@
+{
+  "scanned_at": "2026-09-16T17:28:53.545120+00:00",
+  "target": "https://neverssl.com",
+  "grade": "D",
+  "score": 40,
+  "headers": {
+    "url": "https://neverssl.com/",
+    "present": {},
+    "missing": {
+      "Strict-Transport-Security": "Forces browsers to only use HTTPS for this site, even if a user types http:// or clicks an http link. Without it, an attacker on the same network (e.g. public wifi) can downgrade the connection to plain HTTP and intercept traffic (SSL stripping).",
+      "Content-Security-Policy": "Restricts which sources of scripts, styles, images, etc. the browser is allowed to load. This is the single biggest defense against Cross-Site Scripting (XSS) \u2014 even if an attacker injects a <script> tag, CSP can stop the browser from running it.",
+      "X-Frame-Options": "Prevents the page from being loaded inside an <iframe> on another site. Without this, an attacker can overlay invisible buttons on top of your real site (clickjacking) and trick users into clicking things like 'Transfer money' without realizing it.",
+      "X-Content-Type-Options": "Stops the browser from trying to 'guess' a file's type (MIME sniffing). Without it, a browser might execute a file uploaded as an image as if it were JavaScript.",
+      "Referrer-Policy": "Controls how much of the current page's URL gets leaked to other sites when a user clicks a link. Without it, sensitive info in URLs (session tokens, search queries) can leak to third parties.",
+      "Permissions-Policy": "Lets a site explicitly disable browser features it doesn't need (camera, microphone, geolocation). Without it, if the page is ever compromised by injected code, that code has access to whatever the browser allows by default."
+    }
+  },
+  "tls": {
+    "hostname": "neverssl.com",
+    "connected": true,
+    "protocol": "TLSv1.3",
+    "protocol_is_weak": false,
+    "cert_subject": "neverssl.com",
+    "cert_issuer": "Anthropic",
+    "cert_expires": "2026-10-16 17:28:53+00:00",
+    "days_until_expiry": 29,
+    "expired": false,
+    "error": null
+  }
+}

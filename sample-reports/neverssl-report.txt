@@ -1,0 +1,25 @@
+
+============================================================
+  Security Scan Report — https://neverssl.com
+  Grade: D  (score: 40/100)
+============================================================
+
+HTTP Security Headers  (0 present / 6 checked)
+  [FAIL] Strict-Transport-Security — missing
+         why it matters: Forces browsers to only use HTTPS for this site, even if a user types http:// or clicks an http link. Without it, an attacker on the same network (e.g. public wifi) can downgrade the connection to plain HTTP and intercept traffic (SSL stripping).
+  [FAIL] Content-Security-Policy — missing
+         why it matters: Restricts which sources of scripts, styles, images, etc. the browser is allowed to load. This is the single biggest defense against Cross-Site Scripting (XSS) — even if an attacker injects a <script> tag, CSP can stop the browser from running it.
+  [FAIL] X-Frame-Options — missing
+         why it matters: Prevents the page from being loaded inside an <iframe> on another site. Without this, an attacker can overlay invisible buttons on top of your real site (clickjacking) and trick users into clicking things like 'Transfer money' without realizing it.
+  [FAIL] X-Content-Type-Options — missing
+         why it matters: Stops the browser from trying to 'guess' a file's type (MIME sniffing). Without it, a browser might execute a file uploaded as an image as if it were JavaScript.
+  [FAIL] Referrer-Policy — missing
+         why it matters: Controls how much of the current page's URL gets leaked to other sites when a user clicks a link. Without it, sensitive info in URLs (session tokens, search queries) can leak to third parties.
+  [FAIL] Permissions-Policy — missing
+         why it matters: Lets a site explicitly disable browser features it doesn't need (camera, microphone, geolocation). Without it, if the page is ever compromised by injected code, that code has access to whatever the browser allows by default.
+
+TLS / Certificate
+  [PASS] Protocol: TLSv1.3
+  [PASS] Certificate valid, expires in 29 days
+         subject: neverssl.com, issuer: Anthropic
+
